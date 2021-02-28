@@ -2,9 +2,6 @@
   <div>
     <b-navbar toggleable="lg" type="dark" variant="dark">
       <b-navbar-brand href="#">Nuxt Fitt</b-navbar-brand>
-      <b-button v-b-toggle.sidebar-backdrop
-        ><b-icon icon="camera"></b-icon
-      ></b-button>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -32,29 +29,11 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
-
-    <div>
-      <b-sidebar
-        id="sidebar-backdrop"
-        title="Sidebar with backdrop"
-        :backdrop-variant="variant"
-        backdrop
-        shadow
-      >
-        <div class="px-3 py-2"></div>
-      </b-sidebar>
-    </div>
   </div>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      variant: "dark"
-    };
-  }
-};
+export default {};
 </script>
 
 <style scoped></style>
